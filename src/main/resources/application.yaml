@@ -3,6 +3,3 @@ spring:
     active: dev
   application:
     name: authuser
-    properties:
-      hibernate:
-        show_sql: true
