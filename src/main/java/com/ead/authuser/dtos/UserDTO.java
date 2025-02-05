@@ -76,6 +76,7 @@ public class UserDTO implements UserView {
     @JsonView(UserView.ImagePut.class)
     private String imageUrl;
 
+
     private LocalDateTime creationDate;
     private LocalDateTime lastUpdateDate;
 

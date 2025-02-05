@@ -22,6 +22,5 @@ public interface UserService {
     UserDTO updatePassword(UUID userId, UserDTO userDTO);
 
     UserDTO updateImage(UUID userId, UserDTO userDTO);
-
-
+    
 }

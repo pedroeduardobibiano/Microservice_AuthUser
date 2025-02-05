@@ -29,7 +29,7 @@ public class UserController {
     @GetMapping
     public ResponseEntity<Page<UserDTO>> getAllUsers(
             SpecificationTemplate.UserSpec spec,
-            @PageableDefault(size = 1, sort = "userId", direction = Sort.Direction.ASC) Pageable pageable) {
+            @PageableDefault(sort = "userId", direction = Sort.Direction.ASC) Pageable pageable) {
         Page<UserDTO> user = userService.findAll(spec, pageable);
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
